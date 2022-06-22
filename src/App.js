@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Forecast from "./comp/Forecast";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App w-full  flex justify-center min-h-screen items-center flex-col text-white">
+      <div className="bg-gradient-to-br from-red-700 to-blue-700 shadow-xl shadow-gray-400 px-9 mx-40">
+        <Forecast />
+      
+      </div>
     </div>
   );
 }
